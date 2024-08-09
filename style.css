@@ -1,0 +1,104 @@
+body {
+  background: #f0f0f3;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px; /* Add padding for smaller screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+.container {
+  text-align: center;
+  max-width: 100%; /* Ensure container doesn't exceed screen width */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+span#name {
+  color: #635abf;
+}
+
+span#birth-date {
+  color: #635abf;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.countdown-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.countdown {
+  margin: 10px;
+  text-align: center;
+}
+
+.time {
+  font-size: 3rem; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  background-color: #e8e8f5;
+  padding: 20px; /* Adjust padding */
+  border-radius: 20px;
+  color: #635abf;
+  box-shadow: 6px 6px 12px #d1d1d9, -6px -6px 12px #ffffff;
+  animation: fadeIn 1s ease-in-out;
+  width: 140px; /* Adjust width */
+  height: 140px; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time .label {
+  font-size: 1.5rem; /* Increase label font size */
+  font-weight: bold; /* Make label text bold */
+  color: #7067cf; /* Change label color to purple */
+  margin-top: 10px; /* Add margin between number and label */
+}
+
+p {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #4c477d;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .time {
+    width: 100px; /* Adjust width for mobile */
+    height: 100px; /* Adjust height for mobile */
+    font-size: 2.5rem; /* Adjust font size for mobile */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+  .time .label {
+    font-size: 1.2rem; /* Adjust label font size for mobile */
+  }
+}
